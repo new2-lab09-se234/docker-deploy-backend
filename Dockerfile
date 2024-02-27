@@ -8,4 +8,5 @@ COPY ${DEPENDENCY}/BOOT-INF/lib /app/lib
 COPY ${DEPENDENCY}/META-INF /app/META-INF
 COPY ${DEPENDENCY}/BOOT-INF/classes /app
 
-ENTRYPOINT [ "java", "-Dspring.profile.active=${JAVA_PROFILE}",\"-cp","app:app/lib/*","camt.se234.lab10.lab10Application"]
+ENTRYPOINT [ "java", "-Dspring.profile.active=${JAVA_PROFILE}", \
+        "-cp","app:app/lib/*","camt.se234.lab10.lab10Application"]
